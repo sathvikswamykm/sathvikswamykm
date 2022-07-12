@@ -1,16 +1,29 @@
-### Hi there 👋
+## Flask / SQLAlchemy Simple App
 
-<!--
-**sathvikswamykm/sathvikswamykm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is a simple app using [Flask](http://flask.pocoo.org), [SQLAlchemy](http://www.sqlalchemy.org/) and the connecting [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org) library.
 
-Here are some ideas to get you started:
+### Installing Dependencies
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```
+pip install -r requirements.txt
+-r, --requirement <file>
+Install from the given requirements file. 
+```
+
+### Running the App
+
+To run the app, first run the `models.py` file directly to create the database tables:
+
+```
+$ python models.py
+```
+
+You only need to do this once, unless you change your model definitions (see below).
+
+Then run the app itself:
+
+```
+$ python app.py
+```
+
+Visit [http://localhost:5000/](http://localhost:5000/) in your browser to see the results.
